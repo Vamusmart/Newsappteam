@@ -1,5 +1,4 @@
 import React from "react";
-
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Feed from "./components/Feed.jsx";
@@ -13,8 +12,6 @@ class App extends React.Component {
   };
 
   getFeed = async e => {
-    // e.preventDefault();
-
     let api_call = await fetch(
       "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=db0dacd1507846429b3e6b0949b4560a"
     );
@@ -29,7 +26,6 @@ class App extends React.Component {
 
   getNews = async e => {
     e.preventDefault();
-
     let search = e.target.elements.news.value;
     let api_call = await fetch(
       `https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`
@@ -62,9 +58,7 @@ class App extends React.Component {
       <div>
         <Titles />
         <Form getNews={this.getNews} />
-        { data.length > 0 ? <Feed data={data} /> : <Feed data={homepageData} /> }
-        
-        {/* <Today getFeed={this.getFeed}/> */}
+        {data.length > 0 ? <Feed data={data} /> : <Feed data={homepageData} />}
       </div>
     );
   }

@@ -1,12 +1,11 @@
 import React from "react";
-
 class Feed extends React.Component {
   render() {
     return (
       <div>
         {this.props.data.map(article => (
           <div className="grid-container">
-            <a className="content-title" href={article.url}>
+            <a className="content-title" href={article.url}> 
               <h3>{article.title}</h3>
             </a>
             <img className="image" src={article.urlToImage} alt="" />

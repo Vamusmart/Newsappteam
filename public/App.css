@@ -116,12 +116,3 @@ h3 {
   margin: 0;
 }
 
-
-
-/* On screens that are 600px wide or less, the background color is olive */
-@media screen and (max-width: 375px) {
-  body {
-   
-    
-  }
-}
