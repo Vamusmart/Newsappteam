@@ -3,7 +3,6 @@ import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Feed from "./components/Feed.jsx";
-import Today from "./components/Today.js";
 
 const API_KEY = "db0dacd1507846429b3e6b0949b4560a";
 

@@ -1,39 +1,127 @@
 input[type="text"] {
-    background-color: transparent;
-    border: 0;
-    border-bottom: solid 1px rgb(166, 8, 240);
-    width: 30%;
-    padding-bottom: 4px;
-    color: rgb(205, 15, 223) !important;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-    font-size: 20px;
-  }
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px rgb(166, 8, 240);
+  width: 30%;
+  padding-bottom: 4px;
+  color: rgb(205, 15, 223) !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
 
-  button {
-    border: 0;
-    padding: 8px 20px;
-    margin: 0 2px;
-    border-radius: 2px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    font-size: 15px;
-    cursor: pointer;
-    background-color: rgb(166, 8, 240);
-    color: #fff;
-    font-weight: 100;
-  }
-  
-  button:active {
-    outline: none;
-  }
-/* 
-  html {
-    background: linear-gradient(to right, #e622cc, #e73cd9c0);
-    height: 100vh;
-    display: flex;
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(166, 8, 240);
+  color: #fff;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
 
-    align-items: center;
-  } */
+button:active {
+  outline: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    "title title title title"
+    "swirl swirl swirl swirl"
+    "search search search search"
+    "image source source source"
+    "image content-title content-title content-title"
+    "image news news news";
+}
+
+.date {
+  grid-area: date;
+  font-size: 6px;
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+
+}
+
+.source {
+  grid-area: source;
+  margin-left: 30px;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.content-title {
+  grid-area: content-title;
+  margin-left: 30px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+
+}
+.content-title:hover {
+  color: rgb(166, 8, 240);
+}
+
+.news {
+  grid-area: news;
+  margin-left: 30px;
+  font-family: "Ovo", serif;
+  text-align: justify;
+  margin-right: 10px;
+  /* margin-top: 10px; */
+}
+
+.swirl {
+  width: 250px;
+  margin-top: -10px; 
+}
+
+.title {
+  grid-area: title;
+  margin: 10px;
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+
+.swirl {
+  grid-area: swirl;
+}
+
+.search {
+  grid-area: search;
+  margin: 10px;
+  text-align: center
+}
+
+h4,
+h3 {
+  margin: 0;
+}
+
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 375px) {
+  body {
+   
+    
+  }
+}
