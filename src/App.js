@@ -64,4 +64,8 @@ class App extends React.Component {
   }
 }
 
+// use port 3000 unless there exists a preconfigured port
+//var port = process.env.port || 3000;
+
+
 export default App;
