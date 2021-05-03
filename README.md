@@ -1,3 +1,8 @@
+Simple React App takes JSON News Data from NewsAPI to keep you updated with latest news.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
